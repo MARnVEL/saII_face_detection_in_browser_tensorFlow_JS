@@ -41,8 +41,8 @@ const detectar = async () => {
     // console.log(model)
     const detectorConfig = {
         runtime: 'tfjs',
-        maxFaces: 2,
-        modelType: 'short',
+        maxFaces: 100,
+        modelType: 'full',
     };
     const detector = await faceDetection.createDetector(model, detectorConfig);
     // console.log(detector)
